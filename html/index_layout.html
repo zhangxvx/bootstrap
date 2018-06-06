@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 代码</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="top-menu" id="top">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Bootstrap</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li id="nav1" onclick="index_css">
+                            <a href="../index.html">Bootstrap CSS</a>
+                        </li>
+                        <li class="active" id="nav2" onclick="index_layout">
+                            <a href="#">Bootstrap 组件</a>
+                        </li>
+                        <li id="nav3" onclick="index_js">
+                            <a href="./index_js.html">Bootstrap Js插件</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-brand pull-right">
+                        <a href="http://www.bootcss.com/" target="_blank">Bootstrap官网</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="body">
+        <div class="btn-group-vertical left-menu">
+            <a class="btn btn-primary glyphicon glyphicon-arrow-up" href="#top"></a>
+            <a class="btn btn-primary" href="#1" role="button">1</a>
+            <a class="btn btn-primary" href="#2" role="button">2</a>
+            <a class="btn btn-primary" href="#3" role="button">3</a>
+            <a class="btn btn-primary" href="#4" role="button">4</a>
+            <a class="btn btn-primary" href="#5" role="button">5</a>
+            <a class="btn btn-primary" href="#6" role="button">6</a>
+            <a class="btn btn-primary" href="#7" role="button">7</a>
+            <a class="btn btn-primary" href="#8" role="button">8</a>
+            <a class="btn btn-primary" href="#9" role="button">9</a>
+            <a class="btn btn-primary" href="#10" role="button">10</a>
+            <a class="btn btn-primary" href="#11" role="button">11</a>
+            <a class="btn btn-primary glyphicon glyphicon-arrow-down" href="#bottom"></a>
+        </div>
+        <div class="btn-group-vertical  goto-top-bottom">
+            <a class="btn btn-primary btn-lg glyphicon glyphicon-arrow-up" href="#top"></a>
+            <a class="btn btn-primary btn-lg glyphicon glyphicon-arrow-down" href="#bottom"></a>
+        </div>
+
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h1 class="panel-title">Bootstrap样例</h1>
+            </div>
+
+            <div class="panel-body">
+                <!-- 内联元素 -->
+                <div class="container" id="1">
+                    <p>
+                        <code>&lt;header&gt;</code> 作为内联元素被包围。</p>
+                    <p>如果需要把代码显示为一个独立的块元素，请使用 &lt;pre&gt; 标签：</p>
+                    <pre>&lt;article&gt;&lt;h1&gt;Article Heading&lt;/h1&gt;&lt;/article&gt;</pre>
+                </div>
+                <!-- 响应式的列重置 -->
+                <div class="container" id="2">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                            </p>
+                        </div>
+
+                        <div class="clearfix visible-xs"></div>
+
+                        <div class="col-xs-6 col-sm-3">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                            </p>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 超大屏幕（Jumbotron） -->
+                <div class="container" id="3">
+                    <div class=" jumbotron">
+                        <h1>欢迎登陆页面！</h1>
+                        <p>这是一个超大屏幕（Jumbotron）的实例。</p>
+                        <p>
+                            <a class="btn btn-primary btn-lg" role="button">
+                                学习更多</a>
+                        </p>
+                    </div>
+                    <div class="jumbotron">
+                        <div class="container">
+                            <h1>欢迎登陆页面！</h1>
+                            <p>这是一个超大屏幕（Jumbotron）的实例。</p>
+                            <p>
+                                <a class="btn btn-primary btn-lg" role="button">
+                                    学习更多</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" id="4">
+                    <div class="page-header">
+                        <h1>页面标题实例
+                            <small>子标题</small>
+                        </h1>
+                        <p>这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本。</p>
+                    </div>
+                </div>
+                <div class="container" id="5">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src="../images/firefox-icon.png" alt="通用的占位符缩略图" title="火狐">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src="../images/firefox-icon.png" alt="通用的占位符缩略图">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src="../images/firefox-icon.png" alt="通用的占位符缩略图">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src="../images/firefox-icon.png" alt="通用的占位符缩略图">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../images/firefox-icon.png" alt="通用的占位符缩略图">
+                                <div class="caption">
+                                    <h3>缩略图标签</h3>
+                                    <p>一些示例文本。一些示例文本。</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary" role="button">
+                                            按钮
+                                        </a>
+                                        <a href="#" class="btn btn-default" role="button">
+                                            按钮
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../images/firefox-icon.png" alt="通用的占位符缩略图">
+                                <div class="caption">
+                                    <h3>缩略图标签</h3>
+                                    <p>一些示例文本。一些示例文本。</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary" role="button">
+                                            按钮
+                                        </a>
+                                        <a href="#" class="btn btn-default" role="button">
+                                            按钮
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../images/firefox-icon.png" alt="通用的占位符缩略图">
+                                <div class="caption">
+                                    <h3>缩略图标签</h3>
+                                    <p>一些示例文本。一些示例文本。</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary" role="button">
+                                            按钮
+                                        </a>
+                                        <a href="#" class="btn btn-default" role="button">
+                                            按钮
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../images/firefox-icon.png" alt="通用的占位符缩略图">
+                                <div class="caption">
+                                    <h3>缩略图标签</h3>
+                                    <p>一些示例文本。一些示例文本。</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary" role="button">
+                                            按钮
+                                        </a>
+                                        <a href="#" class="btn btn-default" role="button">
+                                            按钮
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" id="6">
+                    <div class="alert alert-success alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                            &times;
+                        </button>
+                        成功！很好地完成了提交。(no link)
+                    </div>
+                    <div class="alert alert-info alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                            &times;
+                        </button>
+                        <a href="#5" class="alert-link">信息！请注意这个信息。</a>
+                    </div>
+                    <div class="alert alert-warning alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                            &times;
+                        </button>
+                        <a href="#5" class="alert-link">警告！请不要提交。</a>
+                    </div>
+                    <div class="alert alert-danger alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                            &times;
+                        </button>
+                        <a href="#5" class="alert-link">错误！请进行一些更改。</a>
+                    </div>
+                    <div class="alert alert-block alert-success">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <h4>Warning!</h4>
+                        Best check yo self, you're not...
+                    </div>
+                    <div class="alert alert-success">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <h4>Warning!</h4>
+                        Best check yo self, you're not...
+                    </div>
+                </div>
+
+                <div class="container" id="7">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                            <span class="sr-only">40% 完成</span>
+                        </div>
+                    </div>
+                    <div class="progress progress-striped">
+                        <div class="progress-bar" style="width: 40%;"></div>
+                    </div>
+                    <div class="progress progress-striped active">
+                        <div class="progress-bar" style="width: 40%;"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 35%;"></div>
+                        <div class="progress-bar progress-bar-warning" style="width: 20%;"></div>
+                        <div class="progress-bar progress-bar-danger" style="width: 10%;"></div>
+                    </div>
+                    <div class="progress progress-striped">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 90%;">
+                            <span class="sr-only">90% 完成（成功）</span>
+                        </div>
+                    </div>
+                    <div class="progress progress-striped ">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                            <span class="sr-only">30% 完成（信息）</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 20%;">
+                            <span class="sr-only">20% 完成（警告）</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 10%;">
+                            <span class="sr-only">10% 完成（危险）</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" id="8">
+                    <div class="media">
+                        <a class="media-left" href="../images/firefox-icon-small.png">
+                            <img class="media-object" src="../images/firefox-icon-small.png" alt="媒体对象">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">媒体标题</h4>
+                            这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。
+                        </div>
+                    </div>
+                    <div class="media">
+                        <a class="media-left" href="../images/firefox-icon-small.png">
+                            <img class="media-object" src="../images/firefox-icon-small.png" alt=" 媒体对象 ">
+                        </a>
+                        <div class="media-body ">
+                            <h4 class="media-heading ">媒体标题</h4>
+                            这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。
+                            <div class="media ">
+                                <a class="media-left " href="../images/firefox-icon-small.png ">
+                                    <img class="media-object " src="../images/firefox-icon-small.png " alt="媒体对象 ">
+                                </a>
+                                <div class="media-body ">
+                                    <h4 class="media-heading ">媒体标题</h4>
+                                    这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inner " />
+                    <ul class="media-list ">
+                        <li class="media ">
+                            <a class="media-left " href="# ">
+                                <img class="media-object " src="../images/firefox-icon-small.png " alt="通用的占位符图像 ">
+                            </a>
+                            <div class="media-body ">
+                                <h4 class="media-heading ">媒体标题</h4>
+                                <p>这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。
+                                </p>
+                                <!-- 嵌套的媒体对象 -->
+                                <div class="media ">
+                                    <a class="media-left " href="# ">
+                                        <img class="media-object " src="../images/firefox-icon-small.png " alt="通用的占位符图像 ">
+                                    </a>
+                                    <div class="media-body ">
+                                        <h4 class="media-heading ">嵌套的媒体标题</h4>
+                                        这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。
+                                        <!-- 嵌套的媒体对象 -->
+                                        <div class="media ">
+                                            <a class="media-left " href="# ">
+                                                <img class="media-object " src="../images/firefox-icon-small.png " alt="通用的占位符图像 ">
+                                            </a>
+                                            <div class="media-body ">
+                                                <h4 class="media-heading ">嵌套的媒体标题</h4>
+                                                这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 嵌套的媒体对象 -->
+                                <div class="media ">
+                                    <a class="media-left " href="# ">
+                                        <img class="media-object " src="../images/firefox-icon-small.png " alt="通用的占位符图像 ">
+                                    </a>
+                                    <div class="media-body ">
+                                        <h4 class="media-heading ">嵌套的媒体标题</h4>
+                                        这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。 这是一些示例文本。这是一些示例文本。
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container " id="9">
+                    <div class="list-group ">
+                        <a href="#9 " class="list-group-item active ">
+                            <h4 class="list-group-item-heading ">
+                                入门网站包
+                            </h4>
+                        </a>
+                        <a href="#9 " class="list-group-item ">
+                            <h4 class="list-group-item-heading ">
+                                免费域名注册
+                            </h4>
+                            <p class="list-group-item-text ">
+                                您将通过网页进行免费域名注册。
+                            </p>
+                        </a>
+                        <a href="#9 " class="list-group-item ">
+                            <h4 class="list-group-item-heading ">
+                                24*7 支持
+                            </h4>
+                            <p class="list-group-item-text ">
+                                我们提供 24*7 支持。
+                            </p>
+                        </a>
+                    </div>
+                    <div class="list-group ">
+                        <a href="#9 " class="list-group-item active ">
+                            <h4 class="list-group-item-heading ">
+                                商务网站包
+                            </h4>
+                        </a>
+                        <a href="#9 " class="list-group-item ">
+                            <h4 class="list-group-item-heading ">
+                                免费域名注册
+                            </h4>
+                            <p class="list-group-item-text ">
+                                您将通过网页进行免费域名注册。
+                            </p>
+                        </a>
+                        <a href="#9 " class="list-group-item ">
+                            <h4 class="list-group-item-heading ">24*7 支持</h4>
+                            <p class="list-group-item-text ">我们提供 24*7 支持。</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="container" id="10">
+                    <div class="panel panel-primary ">
+                        <div class="panel-heading ">
+                            <h3 class="panel-title ">面板标题</h3>
+                        </div>
+                        <div class="panel-body ">
+                            这是一个基本的面板(panel-primary)(body)
+                        </div>
+                        <div class="panel-footer ">面板脚注</div>
+                    </div>
+                    <div class="panel panel-success ">
+                        <div class="panel-heading ">
+                            <h3 class="panel-title ">面板标题</h3>
+                        </div>
+                        <div class="panel-body ">
+                            这是一个基本的面板(panel-success)
+                        </div>
+                    </div>
+                    <hr class="inner " />
+                    <div class="panel panel-default ">
+                        <div class="panel-heading ">
+                            <h3 class="panel-title ">面板标题</h3>
+                        </div>
+                        <div class="panel-body ">
+                            这是一个基本的面板
+                        </div>
+                        <table class="table ">
+                            <th>产品</th>
+                            <th>价格 </th>
+                            <tr>
+                                <td>产品 A</td>
+                                <td>200</td>
+                            </tr>
+                            <tr>
+                                <td>产品 B</td>
+                                <td>400</td>
+                            </tr>
+                        </table>
+                        <hr class="inner " />
+                        <ul class="list-group ">
+                            <li class="list-group-item ">免费域名注册</li>
+                            <li class="list-group-item ">免费 Window 空间托管</li>
+                            <li class="list-group-item ">图像的数量</li>
+                            <li class="list-group-item ">24*7 支持</li>
+                            <li class="list-group-item ">每年更新成本</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container" id="11">
+                    <div class="well">您好，我在 Well 中！</div>
+                    <div class="well well-lg">您好，我在大的 Well 中！</div>
+                    <div class="well well-sm">您好，我在小的 Well 中！</div>
+                </div>
+            </div>
+
+            <div class="panel-footer ">
+                面板脚注
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="bottom">&copy;2018 zhangxv 版权所有</footer>
+
+</body>
+
+</html>
